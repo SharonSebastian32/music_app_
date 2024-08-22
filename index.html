@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MP3 Song | Player</title>
+
+    <link rel="stylesheet" href="./Styles/Style.css" />
+    <script
+      src="https://kit.fontawesome.com/21c3b1a352.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <img
+          class="song_image"
+          src="./Assets/Images/your my.jpg"
+          alt="song_image"
+        />
+        <h1 style="font-family: cursive">Happier Than Ever</h1>
+        <p>Billie Eilish & Ft. FINNEAS</p>
+        <audio
+          id="audio1"
+           
+          src="./Assets/Song/WhatsApp Audio 2024-08-22 at 09.46.50_76719d2b.mp3"
+          type="audio/mp3"
+        ></audio>
+        <input type="range" value="0" id="progress" />
+
+        <div class="controls">
+          <div><i class="fa-solid fa-backward"></i></div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div><i class="fa-solid fa-forward"></i></div>
+        </div>
+      </div>
+    </div>
+    <script src="./Scripts/Script.js"></script>
+  </body>
+</html>
